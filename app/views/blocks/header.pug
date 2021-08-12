@@ -1,16 +1,26 @@
-header
+header.header
   .container
     .header-top
       .nav 
         .nav-brand
           a(href="index.html") MoGo
-        .nav-menu
-          +navItem("about")
-          +navItem("service")
-          +navItem("work")
-          +navItem("blog")
-          +navItem("contact")
-          .nav-icon
-          .nav-icon 
+        ul.nav-menu
+          li.nav-item
+            a(href="#" class="nav-link") about
+          li.nav-item
+            a(href="#" class="nav-link") service
+            li.nav-item
+            a(href="#" class="nav-link") work
+            li.nav-item
+            a(href="#" class="nav-link") blog
+            li.nav-item
+            a(href="#" class="nav-link") contact
+            li.nav-item
+            a(href="#" class="nav-link")
+              i.fa.fa-shopping-cart
+            li.nav-item
+            a(href="#" class="nav-link")
+              i.fa.fa-search
+
     .header-content
     .header-bottom

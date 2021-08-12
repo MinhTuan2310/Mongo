@@ -1,0 +1,24 @@
+.header {
+  min-height: 100rem;
+  background: linear-gradient(to bottom,rgba($primary-color, 0.8), rgba($secondary-color, 0.8)), url("../images/img-header-bg.jpg") no-repeat center / cover;
+
+  padding-top: 30px;
+  &-top {
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      color: white;
+    }
+    .nav-brand {
+      font-weight: bold;
+      font-size: 3rem;
+    }
+    .nav-menu {
+      display: flex;
+      text-transform: uppercase;
+    }
+    .nav-item:not(:first-child) {
+      margin-left: 50px;
+    }
+  }
+}

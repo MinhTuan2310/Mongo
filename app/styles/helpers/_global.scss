@@ -1,0 +1,16 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+li {
+  list-style-type: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+body {
+  line-height: 1;
+  font-family: $primary-font;
+  font-size: 1.4rem;
+}
