@@ -7,6 +7,7 @@
     .nav {
       display: flex;
       justify-content: space-between;
+      align-items: baseline;
       color: white;
 
     margin-bottom: 170px;
@@ -31,6 +32,13 @@
     }
     .nav-item:not(:first-child) {
       margin-left: 50px;
+    }
+    .nav-link {
+      padding-bottom: 10px;
+      display: inline-block;
+    }
+    .nav-toggle {
+      display: none;
     }
   }
   &-content {
@@ -111,6 +119,10 @@
   &-item:hover {
     color: white;
   }
+  &-item-bar.active:before,
+  &-item:hover &-item-bar:before {
+    background-color: $primary-color;
+  }
   &-item-bar {
     height: 3px;
     width: 100%;
@@ -128,6 +140,8 @@
 
       background-color: transparent;
       position: absolute;
+
+      transition: all 0.2s linear;
     }
   }
   &-item-content {
@@ -142,6 +156,13 @@
       text-transform: uppercase;
 
       margin-left: 10px;
+    }
+  }
+}
+@media screen and (max-width: 1023px) {
+  .header {
+    .nav-item:not(:first-child) {
+      margin-left: 40px;
     }
   }
 }
