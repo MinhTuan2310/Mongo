@@ -35,9 +35,13 @@
   }
   &-content-head {
     text-transform: capitalize;
-    font-size: 72px;
+    font-size: 7.2rem;
     font-family: $secondary-font;
 
     margin-bottom: 32px;
+  }
+  &-content-tilte {
+    font-size: 15rem;
+    font-weight: bold;
   }
 }

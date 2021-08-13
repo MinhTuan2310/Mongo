@@ -70,9 +70,12 @@ body {
     flex-direction: column; }
   .header-content-head {
     text-transform: capitalize;
-    font-size: 72px;
+    font-size: 7.2rem;
     font-family: "Kaushan Script", cursive;
     margin-bottom: 32px; }
+  .header-content-tilte {
+    font-size: 15rem;
+    font-weight: bold; }
 
 .btn {
   height: 40px;
