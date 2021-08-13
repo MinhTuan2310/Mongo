@@ -8,6 +8,9 @@
       display: flex;
       justify-content: space-between;
       color: white;
+
+    margin-bottom: 170px;
+
     }
     .nav-brand {
       font-weight: bold;
@@ -20,5 +23,21 @@
     .nav-item:not(:first-child) {
       margin-left: 50px;
     }
+  }
+  &-content {
+    color: white;
+    text-transform: uppercase;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  &-content-head {
+    text-transform: capitalize;
+    font-size: 72px;
+    font-family: $secondary-font;
+
+    margin-bottom: 32px;
   }
 }
