@@ -71,10 +71,8 @@
     &:before {
       content: "";
       bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      height: 4px;
-      width: 60px;
+      @include position("x");
+      @include size(60px, 4px);
 
       background-color: #fff;
 

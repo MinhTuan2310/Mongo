@@ -99,11 +99,12 @@ body {
     .header-content-title:before {
       content: "";
       bottom: 0;
+      poistion: absolute;
       left: 50%;
       -webkit-transform: translateX(-50%);
       transform: translateX(-50%);
-      height: 4px;
       width: 60px;
+      height: 4px;
       background-color: #fff;
       position: absolute; }
   .header-content-action .link {
