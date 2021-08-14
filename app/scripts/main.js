@@ -15,3 +15,25 @@
 //     ],
 //   });
 // });
+const toggle = document.querySelector(".nav-toggle");
+const menu = document.querySelector(".nav-menu");
+const itemList = document.querySelectorAll(".nav-item");
+toggle.addEventListener("click", e => {
+  menu.classList.toggle("active");
+  e.target.classList.toggle("fa-bars");
+  e.target.classList.toggle("fa-times");
+});
+
+document.body.addEventListener("click", e => {
+  if(!menu.contains(e.target) && !e.target.matches(".nav-toggle")) {
+    menu.classList.remove("active");
+  }
+});
+
+[...itemList].forEach(item => {
+  item.addEventListener("click", e => {
+    menu.classList.remove("active");
+  })
+})
+
+

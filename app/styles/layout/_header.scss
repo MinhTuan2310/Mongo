@@ -175,12 +175,15 @@
     .link {
       margin-bottom: 100px;
     }
+    &-bottom {
+      padding-bottom: 50px;
+    }
   }
 }
 @media screen and (max-width: 767px) {
   .header {
     &-content-head {
-      font-size: 5.2rem;
+      font-size: 4.2rem;
     }
     &-content-title {
       font-size: 6rem;
@@ -198,6 +201,59 @@
     }
     &-item-content span:first-child {
       text-align: center;
+    }
+    .nav {
+      margin-bottom: 65px;
+    }
+    .nav-toggle {
+      display: block;
+      position: relative;
+      font-size: 2.5rem;
+      color: #eee;
+      z-index: 999;
+      cursor: pointer;
+    }
+    .nav-menu {
+      display: block;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 300px;
+      transform: translateX(100%);
+
+      padding-top: 20px;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      background-color: #ccc;
+      z-index: 10;
+
+      transition: all 0.2s linear;
+    }
+    .nav-menu.active {
+      transform: translateX(0);
+    }
+    .nav-item:not(:first-child) {
+      margin-left: 0px;
+    }
+    .nav-item {
+      border-bottom: none;
+    }
+    .nav-link {
+      width: 100%;
+      padding: 10px;
+
+      transition: all 0.2s linear;
+    }
+    .nav-link:active {
+      background-color: rgba($secondary-color, 0.7);
+    }
+    .nav-icon{
+      display: inline-block;
+      padding: 10px;
+      transition: all 0.2s linear;
+      &:active {
+        color: rgba($secondary-color, 0.7);
+      }
     }
   }
 }
