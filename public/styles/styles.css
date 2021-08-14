@@ -67,9 +67,10 @@ body {
     font-size: 1.5rem;
     font-family: "Roboto", sans-serif;
     color: #999;
-    line-height: 1.3;
+    line-height: 1.6;
     text-align: center;
-    max-width: 960px; }
+    max-width: 960px;
+    margin-bottom: 100px; }
 
 .header {
   min-height: 100rem;
@@ -277,6 +278,14 @@ body {
     .header .nav-icon:active {
       color: rgba(239, 213, 137, 0.7); } }
 
-section.about {
+.about {
   padding-top: 100px;
   padding-bottom: 100px; }
+  .about-media {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: -30px; }
+  .about-item {
+    width: calc(100% / 3 - 30px);
+    margin-left: 30px; }
