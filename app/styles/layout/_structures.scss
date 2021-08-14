@@ -7,3 +7,43 @@
   margin: 0 auto;
   padding: 0 15px;
 }
+.block-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &-caption {
+    font-family: $secondary-font;
+    font-size: 2.4rem;
+
+    margin-bottom: 15px;
+  }
+  &-title {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    padding-bottom: 45px;
+    margin-bottom: 45px;
+
+    position: relative;
+    &:after {
+      content: "";
+      bottom: 0;
+      @include position("x");
+      @include size(60px, 4px);
+
+      background-color: $primary-color;
+    }
+  }
+  &-desc{
+    font-size: 1.5rem;
+    font-family: $third-font;
+    color: $text-color;
+    line-height: 1.3;
+
+    text-align: center;
+    max-width: 960px;
+  }
+}
