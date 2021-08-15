@@ -482,3 +482,26 @@ body {
       display: block; }
     .service-content {
       padding-left: 15px; } }
+
+.design {
+  min-height: 858px;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.8))), url(../images/img-device-bg.png) no-repeat center/cover;
+  background: linear-gradient(bottom, rgba(255, 255, 255, 0.8)), url(../images/img-device-bg.png) no-repeat center/cover;
+  padding-top: 100px;
+  position: relative; }
+  .design-photo {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: -90px;
+    -webkit-transform: translateX(-42%);
+    transform: translateX(-42%); }
+
+@media screen and (max-width: 767px) {
+  .design {
+    min-height: 500px;
+    padding-top: 60px; }
+    .design-photo {
+      max-width: 80%;
+      bottom: -45px; } }

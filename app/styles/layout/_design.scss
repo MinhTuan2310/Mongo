@@ -1,0 +1,22 @@
+.design {
+  min-height: 858px;
+  background: linear-gradient(bottom, rgba(#fff, 0.8)), url(../images/img-device-bg.png) no-repeat center / cover;
+
+  padding-top: 100px;
+  position: relative;
+  &-photo {
+    @include position("x");
+    bottom: -90px;
+    transform: translateX(-42%);
+  }
+}
+@media screen and (max-width: 767px) {
+  .design {
+    min-height: 500px;
+    padding-top: 60px;
+    &-photo {
+      max-width: 80%;
+      bottom: -45px;
+    }
+  }
+}
