@@ -1,0 +1,52 @@
+.number {
+  background-color: $third-color;
+  color: white;
+  &-inner {
+    display: flex;
+  }
+  &-item {
+    flex: 1;
+    text-align: center;
+
+    padding-top: 85px;
+    padding-bottom: 85px;
+
+    border-left: 1px solid #b5eae0;
+    &:last-child {
+      border-right: 1px solid #b5eae0;
+    }
+  }
+  &-head {
+    font-weight: bold;
+    font-size: 7.2rem;
+
+    margin-bottom: 30px;
+  }
+  &-content {
+    text-transform: uppercase;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .number {
+    &-item {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    &-head {
+      font-size: 5.2rem;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .number {
+    &-inner {
+      display: block;
+    }
+    &-item {
+      border-left: 0;
+    }
+    &-item:last-child {
+      border-right: 0;
+    }
+  }
+}

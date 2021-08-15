@@ -381,3 +381,42 @@ body {
       .about-media > * {
         scroll-snap-align: start;
         width: 100%; } }
+
+.number {
+  background-color: #95e1d3;
+  color: white; }
+  .number-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .number-item {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    text-align: center;
+    padding-top: 85px;
+    padding-bottom: 85px;
+    border-left: 1px solid #b5eae0; }
+    .number-item:last-child {
+      border-right: 1px solid #b5eae0; }
+  .number-head {
+    font-weight: bold;
+    font-size: 7.2rem;
+    margin-bottom: 30px; }
+  .number-content {
+    text-transform: uppercase; }
+
+@media screen and (max-width: 1023px) {
+  .number-item {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+  .number-head {
+    font-size: 5.2rem; } }
+
+@media screen and (max-width: 767px) {
+  .number-inner {
+    display: block; }
+  .number-item {
+    border-left: 0; }
+  .number-item:last-child {
+    border-right: 0; } }
