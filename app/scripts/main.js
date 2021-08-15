@@ -34,6 +34,4 @@ document.body.addEventListener("click", e => {
   item.addEventListener("click", e => {
     menu.classList.remove("active");
   })
-})
-
-
+});
