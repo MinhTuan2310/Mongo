@@ -35,3 +35,17 @@ document.body.addEventListener("click", e => {
     menu.classList.remove("active");
   })
 });
+// accordion
+const accItemList = document.querySelectorAll(".wedo-accordion-item");
+const accSelectList = document.querySelectorAll(".wedo-accordion-select");
+const accOptionList = document.querySelectorAll(".wedo-accordion-option");
+
+[...accSelectList].forEach(accSelect => {
+  accSelect.addEventListener("click", e => {
+    accOptionList.forEach(accOption => {
+      accOption.classList.remove("active");
+    });
+    e.currentTarget.nextElementSibling.classList.add("active");
+    console.log(e.currentTarget);
+  })
+});
