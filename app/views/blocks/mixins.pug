@@ -4,3 +4,23 @@ mixin blockHeader(caption, title, desc)
     h2.block-header-title= title 
     if desc
       p.block-header-desc= desc
+
+mixin blockSlider(desc,name)
+  .slider-wrapper
+    <i class="fas fa-chevron-left slider-prev"></i>
+    .slider-list
+      +blockSliderItem(desc, name)
+    <i class="fas fa-chevron-right slider-next"></i>
+
+mixin blockSliderItem(desc, name)
+  .slider-item
+    if block 
+      block 
+    else 
+      i.fas.fa-comments.slider-image
+    .slider-content 
+      p.slider-content-desc= desc
+      .slider-content-name
+        span
+        span= name
+
