@@ -1,0 +1,96 @@
+.people {
+  padding: 110px 0;
+
+  background: linear-gradient(to bottom, rgba(#fff, 0.8)), url(../images/img-people-bg.png) no-repeat center / cover;
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 80px;
+  }
+  &-item {
+    display: flex;
+    align-items: flex-start;
+
+    color: $text-color;
+  }
+  &-avatar{
+    flex-shrink: 1;
+  }
+  &-content {
+    padding-left: 30px;
+  }
+  &-content-name {
+    text-transform: uppercase;
+    color: black;
+
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  &-content-position {
+    font-family: $third-font;
+    font-style: italic;
+    text-transform: capitalize;
+
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    &:after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+
+      background-color: $primary-color;
+      @include size(60px, 4px);
+    }
+  }
+  &-content-desc {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    font-family: $third-font;
+
+    padding-right: 30px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .people {
+    &-list {
+      grid-gap: 40px;
+    }
+    &-item {
+      display: block;
+    }
+    &-content {
+      padding-left: 0px;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .people {
+    padding: 50px 0;
+    &-list {
+      display: grid;
+      justify-content: flex-start;
+      grid-auto-columns: 100%;
+      grid-auto-flow: column;
+      grid-gap: 1.5rem;
+      overflow: auto;
+      overflow-y: hidden;
+      scroll-snap-type: x mandatory;
+      scroll-snap-stop: always;
+      -ms-touch-action: manipulation;
+      touch-action: manipulation;
+      -webkit-overflow-scrolling: touch;
+      scroll-padding: 1rem;
+      grid-template-columns: unset;
+      &::-webkit-scrollbar {
+        display: none;
+        width: 0;
+      }
+      & > * {
+        scroll-snap-align: start;
+      }
+    }
+  }
+}

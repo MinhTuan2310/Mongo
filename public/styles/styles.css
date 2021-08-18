@@ -907,3 +907,89 @@ body {
 @media screen and (max-width: 767px) {
   .slider-icon {
     width: 50%; } }
+
+.people {
+  padding: 110px 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8))), url(../images/img-people-bg.png) no-repeat center/cover;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8)), url(../images/img-people-bg.png) no-repeat center/cover; }
+  .people-list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 80px; }
+  .people-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    color: #999; }
+  .people-avatar {
+    -ms-flex-negative: 1;
+    flex-shrink: 1; }
+  .people-content {
+    padding-left: 30px; }
+  .people-content-name {
+    text-transform: uppercase;
+    color: black;
+    margin-bottom: 20px;
+    margin-top: 10px; }
+  .people-content-position {
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    text-transform: capitalize;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    position: relative; }
+    .people-content-position:after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+      background-color: #ea8383;
+      width: 60px;
+      height: 4px; }
+  .people-content-desc {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    font-family: "Roboto", sans-serif;
+    padding-right: 30px; }
+
+@media screen and (max-width: 1023px) {
+  .people-list {
+    grid-gap: 40px; }
+  .people-item {
+    display: block; }
+  .people-content {
+    padding-left: 0px; } }
+
+@media screen and (max-width: 767px) {
+  .people {
+    padding: 50px 0; }
+    .people-list {
+      display: -ms-grid;
+      display: grid;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      grid-auto-columns: 100%;
+      grid-auto-flow: column;
+      grid-gap: 1.5rem;
+      overflow: auto;
+      overflow-y: hidden;
+      -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+      scroll-snap-stop: always;
+      -ms-touch-action: manipulation;
+      touch-action: manipulation;
+      -webkit-overflow-scrolling: touch;
+      scroll-padding: 1rem;
+      -ms-grid-columns: unset;
+      grid-template-columns: unset; }
+      .people-list::-webkit-scrollbar {
+        display: none;
+        width: 0; }
+      .people-list > * {
+        scroll-snap-align: start; } }
