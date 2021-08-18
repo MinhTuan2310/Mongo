@@ -901,4 +901,9 @@ body {
 .slider-icon {
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  padding-left: 30px; }
+  padding-left: 30px;
+  margin-bottom: 30px; }
+
+@media screen and (max-width: 767px) {
+  .slider-icon {
+    width: 50%; } }
