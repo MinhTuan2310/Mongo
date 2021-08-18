@@ -755,3 +755,52 @@ body {
   .team-overlay-list i:hover {
     color: white;
     background-color: #ea8383; }
+
+@media screen and (max-width: 767px) {
+  .team {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+    .team-member {
+      display: -ms-grid;
+      display: grid;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      grid-auto-columns: 80%;
+      grid-auto-flow: column;
+      grid-gap: 1.5rem;
+      overflow: auto;
+      overflow-y: hidden;
+      -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+      scroll-snap-stop: always;
+      -ms-touch-action: manipulation;
+      touch-action: manipulation;
+      -webkit-overflow-scrolling: touch;
+      scroll-padding: 1rem;
+      -ms-grid-columns: unset;
+      grid-template-columns: unset; }
+      .team-member::-webkit-scrollbar {
+        display: none;
+        width: 0; }
+      .team-member > * {
+        scroll-snap-align: start;
+        width: 100%; }
+    .team-member-item {
+      margin-bottom: 20px; }
+    .team-member-inner.active {
+      -webkit-transform: unset;
+      transform: unset; }
+      .team-member-inner.active .team-overlay {
+        opacity: 1; }
+      .team-member-inner.active:before {
+        -webkit-transform: unset;
+        transform: unset; } }
+
+.brand {
+  background-color: #f8f8f8;
+  padding: 65px 5px; }
+
+@media screen and (max-width: 767px) {
+  .brand {
+    padding: 35px 5px; } }

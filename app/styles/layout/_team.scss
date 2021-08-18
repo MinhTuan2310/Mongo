@@ -87,4 +87,48 @@
     background-color: $primary-color;
   }
 }
+@media screen and (max-width: 767px) {
+  .team {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    &-member {
+
+      display: grid;
+      justify-content: flex-start;
+      grid-auto-columns: 80%;
+      grid-auto-flow: column;
+      grid-gap: 1.5rem;
+      overflow: auto;
+      overflow-y: hidden;
+      scroll-snap-type: x mandatory;
+      scroll-snap-stop: always;
+      -ms-touch-action: manipulation;
+      touch-action: manipulation;
+      -webkit-overflow-scrolling: touch;
+      scroll-padding: 1rem;
+      grid-template-columns: unset;
+
+      &::-webkit-scrollbar {
+        display: none;
+        width: 0;
+      }
+      & > *{
+        scroll-snap-align: start;
+        width: 100%;
+      }
+    }
+    &-member-item {
+      margin-bottom: 20px;
+    }
+    &-member-inner.active {
+      transform: unset;
+      .team-overlay {
+        opacity: 1;
+      }
+      &:before {
+        transform: unset;
+      }
+    }
+  }
+}
 
