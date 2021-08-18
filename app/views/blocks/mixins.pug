@@ -5,17 +5,17 @@ mixin blockHeader(caption, title, desc)
     if desc
       p.block-header-desc= desc
 
-mixin blockSlider(desc,name)
+mixin blockSlider(desc,name, src)
   .slider-wrapper
     <i class="fas fa-chevron-left slider-prev"></i>
     .slider-list
-      +blockSliderItem(desc, name)
+      +blockSliderItem(desc, name, src)
     <i class="fas fa-chevron-right slider-next"></i>
 
-mixin blockSliderItem(desc, name)
+mixin blockSliderItem(desc, name, src)
   .slider-item
-    if block 
-      block 
+    if src 
+      img.slider-icon(src= src) 
     else 
       i.fas.fa-comments.slider-image
     .slider-content 
@@ -24,3 +24,10 @@ mixin blockSliderItem(desc, name)
         span
         span= name
 
+mixin blockPhoto(src)
+  .work-item
+    img.work-photo(src=src)
+    .work-overlay 
+      img.work-overlay-icon(src="./images/img-work-icon.png") 
+      p.work-overlay-title creative designed 
+      p.work-overlay-desc Lorem ipsum dolor sit

@@ -140,3 +140,41 @@
     padding-bottom: 5px;
   }
 }
+
+// BlockPhotos
+.work-item {
+  position: relative;
+
+  cursor: pointer;
+}
+.work-overlay {
+  @include positionFull;
+  
+  background: linear-gradient(to bottom,rgba($primary-color, 0.8), rgba($secondary-color, 0.8));
+
+  opacity: 0;
+  transition: all 0.2s linear;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  color: white;
+  & > * {
+    margin-bottom: 10px;
+  }
+}
+.work-overlay-title {
+  text-transform: uppercase;
+}
+.work-overlay-desc {
+  font-family: $third-font;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+.work-item:hover {
+  .work-overlay {
+    opacity: 1;
+  }
+}
