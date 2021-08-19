@@ -46,7 +46,6 @@ const accOptionList = document.querySelectorAll(".wedo-accordion-option");
       accOption.classList.remove("active");
     });
     e.currentTarget.nextElementSibling.classList.add("active");
-    console.log(e.currentTarget);
   })
 });
 

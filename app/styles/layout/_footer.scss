@@ -54,6 +54,7 @@
   }
   &-contact-social {
     display: inline-flex;
+    align-items: baseline;
 
     margin-bottom: 40px;
     span {
@@ -69,6 +70,8 @@
     gap: 0 15px;
     & > * {
       color: $third-color;
+      cursor: pointer;
+      font-size: 2rem;
     }
 
     padding-left: 20px;

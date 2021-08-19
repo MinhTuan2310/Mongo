@@ -72,12 +72,22 @@
   margin-left: 10px;
   font-size: 3rem;
   cursor: pointer;
+
+  transition: all 0.2s linear;
+  &:active {
+    color: #999;
+  }
 }
 .slider-next {
   display: inline-block;
   margin-right: 10px;
   font-size: 3rem;
   cursor: pointer;
+
+  transition: all 0.2s linear;
+  &:active {
+    color: #999;
+  }
 }
 .slider-list {
 
@@ -85,7 +95,7 @@
   height: 100%;
   display: flex;
 
-  transition: all 0.25s linear;
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
   // position: relative;
 }
 .slider-item {
