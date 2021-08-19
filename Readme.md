@@ -1,3 +1,2 @@
 - Required NodeJS installed
 - `npm install` then run `npm run dev`
-- create file index.html in public and rm -rf/node_modules then run install;
