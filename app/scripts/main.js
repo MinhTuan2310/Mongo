@@ -49,3 +49,47 @@ const accOptionList = document.querySelectorAll(".wedo-accordion-option");
     console.log(e.currentTarget);
   })
 });
+
+// slider
+const prevButtonList = document.querySelectorAll(".slider-prev");
+const nextButtonList = document.querySelectorAll(".slider-next");
+const sliderList = document.querySelectorAll(".slider-list");
+
+const sliderItemList = document.querySelectorAll(".slider-item")
+
+// const position = sliderItem[0].clientWidth;
+
+let position = 0;
+
+nextButtonList.forEach(nextButton => {
+
+  nextButton.addEventListener("click", e => {
+    handleChangeSlide(1);
+  })
+});
+
+prevButtonList.forEach(prevButton => {
+
+  prevButton.addEventListener("click", e => {
+    handleChangeSlide(-1);
+  })
+});
+
+function handleChangeSlide(dir) {
+  if(dir === 1) {
+    if(position <= -200) return;
+    
+    position = position - 100;
+    sliderList.forEach(slider => {
+      slider.style.transform = `translateX(${position}%)`;
+    })
+  }
+  if(dir === -1) {
+    if(position >= 0) return;
+    
+    position = position + 100;
+    sliderList.forEach(slider => {
+      slider.style.transform = `translateX(${position}%)`;
+    })
+  }
+}

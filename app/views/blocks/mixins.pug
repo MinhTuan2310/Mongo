@@ -5,11 +5,14 @@ mixin blockHeader(caption, title, desc)
     if desc
       p.block-header-desc= desc
 
-mixin blockSlider(desc,name, src)
-  .slider-wrapper
+mixin blockSlider
+  .slider
     <i class="fas fa-chevron-left slider-prev"></i>
-    .slider-list
-      +blockSliderItem(desc, name, src)
+    .slider-wrapper
+      .slider-list
+        +blockSliderItem('"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."', "Jon Doe")
+        +blockSliderItem('"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."', "Black Pink")
+        +blockSliderItem('"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."', "Lukaku")
     <i class="fas fa-chevron-right slider-next"></i>
 
 mixin blockSliderItem(desc, name, src)
