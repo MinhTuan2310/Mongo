@@ -139,6 +139,11 @@
   .slider-content-name {
     padding-bottom: 5px;
   }
+
+  section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 
 // BlockPhotos
@@ -177,4 +182,8 @@
   .work-overlay {
     opacity: 1;
   }
+}
+section {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
