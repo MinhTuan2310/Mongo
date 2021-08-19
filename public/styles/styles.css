@@ -1110,9 +1110,11 @@ section {
   color: #ea8383;
   max-height: 200px; }
   .map i {
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    font-size: 2.4rem; }
   .map a {
     display: inline-block;
+    font-size: 2.4rem;
     text-transform: uppercase;
     font-weight: bold;
     padding-bottom: 20px;
@@ -1128,3 +1130,75 @@ section {
     transform: translateX(-50%);
     bottom: 0;
     background-color: #ea8383; }
+
+.footer {
+  padding-top: 70px;
+  padding-bottom: 25px;
+  background-color: #f8f8f8; }
+  .footer-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: -50px; }
+    .footer-inner > * {
+      width: calc(100% / 3 - 50px);
+      margin-left: 50px; }
+  .footer-contact-brand {
+    font-size: 4.6rem;
+    font-weight: bold;
+    color: #ccc;
+    margin-bottom: 40px; }
+  .footer-contact-desc {
+    color: #999;
+    line-height: 1.33;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 40px; }
+  .footer-contact-follow {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc; }
+    .footer-contact-follow span:first-child {
+      display: inline-block;
+      font-weight: bold;
+      font-size: 1.8rem; }
+    .footer-contact-follow span:last-child {
+      display: inline-block;
+      padding-left: 5px; }
+  .footer-contact-social {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin-bottom: 40px; }
+    .footer-contact-social span {
+      font-family: "Roboto", sans-serif;
+      font-style: italic;
+      color: #999;
+      text-transform: capitalize;
+      font-size: 1.5rem; }
+  .footer-contact-list {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    gap: 0 15px;
+    padding-left: 20px; }
+    .footer-contact-list > * {
+      color: #95e1d3; }
+  .footer-contact-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .footer-contact-form input {
+      border: 1px solid #ccc;
+      outline: none;
+      padding: 10px;
+      font-family: "Roboto", sans-serif;
+      font-style: italic;
+      color: #999; }
+    .footer-contact-form .btn {
+      padding: 0 30px;
+      text-transform: uppercase;
+      font-family: "Montserrat", sans-serif;
+      color: white;
+      font-weight: bold;
+      border: none;
+      background-color: #95e1d3; }

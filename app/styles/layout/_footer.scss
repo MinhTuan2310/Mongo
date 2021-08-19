@@ -1,0 +1,90 @@
+.footer {
+  padding-top: 70px;
+  padding-bottom: 25px;
+
+  background-color: $gray-color;
+  &-inner {
+    display: flex;
+    margin-left: -50px;
+    & > * {
+      width: calc(100% / 3 - 50px);
+      margin-left: 50px;
+    }
+  }
+  &-contact-brand {
+    font-size: 4.6rem;
+    font-weight: bold;
+    color: #ccc;
+
+    margin-bottom: 40px;
+  }
+
+  &-contact-desc {
+    color: $text-color;
+    line-height: 1.33;
+    font-family: $third-font;
+
+    margin-bottom: 40px;
+  }
+
+  &-contact-follow {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+
+    span:first-child {
+      display: inline-block;
+
+      font-weight: bold;
+      font-size: 1.8rem;
+    }
+    span:last-child {
+      display: inline-block;
+
+      padding-left: 5px;
+    }
+  }
+  &-contact-social {
+    display: inline-flex;
+
+    margin-bottom: 40px;
+    span {
+      font-family: $third-font;
+      font-style: italic;
+      color: $text-color;
+      text-transform: capitalize;
+      font-size: 1.5rem;
+    }
+  }
+  &-contact-list {
+    display: inline-flex;
+    gap: 0 15px;
+    & > * {
+      color: $third-color;
+    }
+
+    padding-left: 20px;
+  }
+  &-contact-form {
+    display: flex;
+    input {
+      border: 1px solid #ccc;
+      outline: none;
+
+      padding: 10px;
+      font-family: $third-font;
+      font-style: italic;
+      color: $text-color;
+    }
+    .btn {
+      padding: 0 30px;
+      text-transform: uppercase;
+      font-family: $primary-font;
+      color: white;
+      font-weight: bold;
+
+      border: none;
+      background-color: $third-color;
+    }
+  }
+}
