@@ -138,6 +138,7 @@
   &-instagram-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     justify-content: flex-end;
 
     margin-bottom: 20px;

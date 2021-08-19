@@ -27,12 +27,16 @@ toggle.addEventListener("click", e => {
 document.body.addEventListener("click", e => {
   if(!menu.contains(e.target) && !e.target.matches(".nav-toggle")) {
     menu.classList.remove("active");
+    toggle.classList.remove("fa-times");
+    toggle.classList.add("fa-bars");
   }
 });
 
 [...itemList].forEach(item => {
   item.addEventListener("click", e => {
     menu.classList.remove("active");
+    toggle.classList.remove("fa-times");
+    toggle.classList.add("fa-bars");
   })
 });
 // accordion

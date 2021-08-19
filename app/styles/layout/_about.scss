@@ -69,16 +69,15 @@
       grid-auto-columns: 80%;
       grid-auto-flow: column;
       grid-gap: 1.5rem;
-      overflow: auto;
+      overflow-x: auto;
       overflow-y: hidden;
       scroll-snap-type: x mandatory;
       scroll-snap-stop: always;
       -ms-touch-action: manipulation;
       touch-action: manipulation;
       -webkit-overflow-scrolling: touch;
-      scroll-padding: 1rem;
+      scroll-padding: 3rem;
       grid-template-columns: unset;
-      padding-left: 15px;
       &::-webkit-scrollbar {
         display: none;
         width: 0;
@@ -86,6 +85,15 @@
       & > *{
         scroll-snap-align: start;
         width: 100%;
+      }
+    }
+    &-item {
+      &.active,
+      &:hover {
+        transform: unset;
+        &:before {
+          transform: unset;
+        }
       }
     }
   }
