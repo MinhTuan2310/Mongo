@@ -1139,7 +1139,9 @@ section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 0 50px; }
+    gap: 0 50px;
+    padding-bottom: 70px;
+    border-bottom: 1px solid #ccc; }
   .footer-contact {
     width: 40%; }
   .footer-blog {
@@ -1254,3 +1256,17 @@ section {
     font-style: italic;
     font-size: 1.3rem;
     color: #999; }
+  .footer-signature {
+    padding: 20px 0;
+    text-align: center;
+    color: #333; }
+    .footer-signature span {
+      color: #ea8383; }
+
+@media screen and (max-width: 1023px) {
+  .footer-inner {
+    display: block;
+    padding-bottom: 20px; }
+    .footer-inner > * {
+      width: 100%;
+      margin-bottom: 30px; } }
