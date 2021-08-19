@@ -139,11 +139,6 @@
   .slider-content-name {
     padding-bottom: 5px;
   }
-
-  section {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
 }
 
 // BlockPhotos
@@ -186,4 +181,10 @@
 section {
   padding-top: 100px;
   padding-bottom: 100px;
+}
+@media screen and (max-width: 767px) {
+  section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }

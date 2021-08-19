@@ -153,10 +153,7 @@ body {
     margin-bottom: 20px;
     padding: 20px; }
   .slider-content-name {
-    padding-bottom: 5px; }
-  section {
-    padding-top: 50px;
-    padding-bottom: 50px; } }
+    padding-bottom: 5px; } }
 
 .work-item {
   position: relative;
@@ -204,6 +201,11 @@ body {
 section {
   padding-top: 100px;
   padding-bottom: 100px; }
+
+@media screen and (max-width: 767px) {
+  section {
+    padding-top: 50px;
+    padding-bottom: 50px; } }
 
 .header {
   min-height: 100rem;
@@ -1000,3 +1002,91 @@ section {
         width: 0; }
       .people-list > * {
         scroll-snap-align: start; } }
+
+.blog-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px; }
+
+.blog-media {
+  position: relative; }
+
+.blog-media-photo {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover; }
+
+.blog-media-calendar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  background-color: #95e1d3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 15px;
+  -webkit-transform: translate(-1rem, -1rem);
+  transform: translate(-1rem, -1rem); }
+  .blog-media-calendar span:first-child {
+    font-size: 3rem;
+    font-weight: bold; }
+  .blog-media-calendar span:last-child {
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    font-size: 1.5rem; }
+
+.blog-content {
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc; }
+
+.blog-content-title {
+  color: black;
+  text-transform: uppercase;
+  line-height: 1.33;
+  margin-bottom: 20px; }
+
+.blog-content-desc {
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  color: #999;
+  line-height: 1.33; }
+
+.blog-follow {
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.blog-follow-item:not(:first-child) {
+  margin-left: 20px; }
+
+.blog-follow-item i {
+  color: #95e1d3; }
+
+.blog-follow-item span {
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  color: #999;
+  padding-left: 5px; }
+
+@media screen and (max-width: 767px) {
+  .blog-list {
+    display: block; }
+  .blog-item {
+    margin-bottom: 30px; } }
