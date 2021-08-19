@@ -1123,7 +1123,7 @@ section {
   .map a:before {
     content: "";
     width: 60px;
-    height: 3px;
+    height: 4px;
     position: absolute;
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -1139,10 +1139,13 @@ section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: -50px; }
-    .footer-inner > * {
-      width: calc(100% / 3 - 50px);
-      margin-left: 50px; }
+    gap: 0 50px; }
+  .footer-contact {
+    width: 40%; }
+  .footer-blog {
+    width: 35%; }
+  .footer-instagram {
+    width: 25%; }
   .footer-contact-brand {
     font-size: 4.6rem;
     font-weight: bold;
@@ -1201,4 +1204,53 @@ section {
       color: white;
       font-weight: bold;
       border: none;
-      background-color: #95e1d3; }
+      background-color: #95e1d3;
+      cursor: pointer; }
+  .footer-head {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #333; }
+  .footer-blog-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 30px; }
+  .footer-blog-content {
+    padding-left: 20px; }
+  .footer-blog-title {
+    display: inline-block;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.33;
+    margin-bottom: 10px; }
+  .footer-blog-time {
+    font-family: "Roboto", sans-serif;
+    color: #999;
+    font-style: italic;
+    font-size: 1.3rem; }
+  .footer-instagram-list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    margin-bottom: 20px; }
+    .footer-instagram-list img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+      object-fit: cover; }
+  .footer-instagram-more {
+    border: none;
+    background-color: transparent;
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    font-size: 1.3rem;
+    color: #999; }

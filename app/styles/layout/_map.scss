@@ -28,7 +28,7 @@
   }
   a:before {
     content: "";
-    @include size(60px, 3px);
+    @include size(60px, 4px);
     @include position("x");
     bottom: 0;
 
