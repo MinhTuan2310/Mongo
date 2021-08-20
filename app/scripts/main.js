@@ -119,7 +119,7 @@ console.log(number.offsetTop);
 window.addEventListener('scroll', scrollHeader);
 
 function scrollHeader() {
-  if(this.scrollY >= number.offsetTop - 500) {
+  if(this.scrollY >= number.offsetTop - 300) {
     counters.forEach(counter => {
       const updateCount = () => {
         const target = +counter.getAttribute("data-set");
