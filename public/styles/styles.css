@@ -227,7 +227,6 @@ section {
     padding-bottom: 50px; } }
 
 .header {
-  min-height: 100rem;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(234, 131, 131, 0.8)), to(rgba(239, 213, 137, 0.8))), url("../images/img-header-bg.jpg") no-repeat center/cover;
   background: linear-gradient(to bottom, rgba(234, 131, 131, 0.8), rgba(239, 213, 137, 0.8)), url("../images/img-header-bg.jpg") no-repeat center/cover;
   padding-top: 30px; }
@@ -972,7 +971,10 @@ section {
     color: #999; }
   .people-avatar {
     -ms-flex-negative: 1;
-    flex-shrink: 1; }
+    flex-shrink: 1;
+    width: 110px;
+    height: 110px;
+    border-radius: 100rem; }
   .people-content {
     padding-left: 30px; }
   .people-content-name {

@@ -96,3 +96,46 @@ function handleChangeSlide(dir) {
     })
   }
 }
+// scrollReveal
+const sr = ScrollReveal({
+  distance: '60px',
+  duration: 2500,
+  delay: 400,
+  // reset: true
+})
+sr.reveal(`.header-content`)
+sr.reveal(`.header-list`, {origin: "left", duration: 2000})
+sr.reveal(`section`);
+sr.reveal(`.footer`);
+
+
+// number counting
+const number = document.querySelector(".number");
+const counters = document.querySelectorAll(".number-head");
+const speed = 100;
+console.log(window.scrollY);
+console.log(number.offsetTop);
+
+window.addEventListener('scroll', scrollHeader);
+
+function scrollHeader() {
+  if(this.scrollY >= number.offsetTop - 500) {
+    counters.forEach(counter => {
+      const updateCount = () => {
+        const target = +counter.getAttribute("data-set");
+        const count = +counter.innerText;
+    
+        if(count < target) {
+          counter.innerText = count + 1;
+          setTimeout(updateCount, 50);
+        } else {
+          counter.innerText = target;
+        }
+      }
+    
+      updateCount();
+    })
+  }
+}
+
+
